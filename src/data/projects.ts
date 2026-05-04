@@ -8,15 +8,30 @@ export interface Project {
   link?: string;
   github?: string;
   image?: string;
+  heroImage?: string; // Imagem para slider hero (1024x500)
 }
 
 export const projects: Project[] = [
+    {
+    id: 'tsevele',
+    title: 'Tsevele',
+    description: 'Inspirada no conhecimento e criatividade dos habitantes da comunidade T(s)evele, a tsevele posiciona-se como uma empresa umbrela, que actua em várias áreas de negócio, representando a natureza multi-uso do utensílio tsevele. A tsevele actua nas áreas de Comunicação, Consultoria/Serviços e Comércio, especificamente nos ramos de turismo, agricultura, comunicação social e comunicação estratégica, marcas e consultoria em comunicação.',
+    category: 'Informaçao/Cultura',
+    technologies: [ 'Flutter', 'Paystack'],
+    features: [
+      'API REST com autenticação JWT',
+      'Gestão de conteúdos culturais',
+      'Integração com Paystack'
+    ],
+    image: '/images/projects/hero/tsevele.jpg',
+    heroImage: '/images/projects/hero/tsevele.jpg',
+  },
   {
-    id: 'passebem',
-    title: 'PasseBem',
-    description: 'Plataforma educacional completa com API REST, aplicativo móvel e integração de pagamentos. Sistema de chat em tempo real, vídeos educacionais e acompanhamento de progresso do aluno.',
-    category: 'Educação',
-    technologies: ['Node.js', 'Express', 'MongoDB', 'React Native', 'Flutter', 'Socket.io', 'Paystack'],
+    id: 'cobest-marketplace',
+    title: 'Cobest Marketplace',
+    description: 'Cobest - Seu Marketplace Completo Descubra a experiência de compras online mais completa com o Cobest! Nosso marketplace oferece uma ampla variedade de produtos com entrega rápida e segura diretamente na sua porta. - COMPRAS INTELIGENTES - ENTREGA RÁPIDA E CONFIÁVEL- PAGAMENTOS SEGUROS',
+    category: 'Marketplace',
+    technologies: [ 'Flutter', 'Socket.io', 'Paystack'],
     features: [
       'API REST com autenticação JWT',
       'Chat em tempo real com WebSocket',
@@ -25,6 +40,8 @@ export const projects: Project[] = [
       'Notificações push',
       'Acompanhamento de progresso'
     ],
+    image: '/images/projects/hero/Cobest.jpg',
+    heroImage: '/images/projects/hero/Cobest.jpg',
   },
   {
     id: 'chatmaza',
@@ -40,6 +57,59 @@ export const projects: Project[] = [
       'PWA para uso offline',
       'Interface moderna e responsiva'
     ],
+    image: '/images/projects/hero/chatmaza.png',
+    heroImage: '/images/projects/hero/chatmaza.png',
+  },
+   {
+    id: 'maranata',
+    title: 'Maranata Game',
+    description: 'Plataforma educacional completa com API REST, aplicativo móvel e integração de pagamentos. Sistema de chat em tempo real, vídeos educacionais e acompanhamento de progresso do aluno.',
+    category: 'Educação',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'React Native', 'Flutter', 'Socket.io', 'Paystack'],
+    features: [
+      'API REST com autenticação JWT',
+      'Chat em tempo real com WebSocket',
+      'Gestão de conteúdos educacionais',
+      'Integração com Paystack',
+      'Notificações push',
+      'Acompanhamento de progresso'
+    ],
+    image: '/images/projects/hero/Maranata.png',
+    heroImage: '/images/projects/hero/Maranata.png',
+  },
+  {
+    id: 'shalom-bible',
+    title: 'Shalom Bible',
+    description: 'O Shalom Bible é o seu assistente bíblico inteligente. Leia a Bíblia completa com acesso ao contexto original em hebraico e grego, e deixe a inteligência artificial tornar cada passagem mais compreensível. Funcionalidades principais: Leitura Completa — Navegue por todos os livros da Bíblia com traduções disponíveis; Contexto Original — Explore o significado histórico e linguístico das palavras em hebraico e grego; Busca por Cenário — Descreva uma situação da sua vida e receba versículos bíblicos relevantes; Gerador de Sermões — Crie sermões completos e fundamentados a partir de qualquer passagem bíblica; Ideal para pastores, líderes, estudantes da Palavra e qualquer pessoa que queira aprofundar a sua fé com mais contexto e clareza. Disponível em Português e Inglês.',
+    category: 'Educação',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'React Native', 'Flutter', 'Socket.io', 'Paystack'],
+    features: [
+      'API REST com autenticação JWT',
+      'Chat em tempo real com WebSocket',
+      'Gestão de conteúdos educacionais',
+      'Integração com Paystack',
+      'Notificações push',
+      'Acompanhamento de progresso'
+    ],
+    image: '/images/projects/hero/shalom-bible-grafico-funcionalidade.png',
+    heroImage: '/images/projects/hero/shalom-bible-grafico-funcionalidade.png',
+  },
+  {
+    id: 'passebem',
+    title: 'PasseBem',
+    description: 'Plataforma educacional completa com API REST, aplicativo móvel e integração de pagamentos. Sistema de chat em tempo real, vídeos educacionais e acompanhamento de progresso do aluno.',
+    category: 'Educação',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'React Native', 'Flutter', 'Socket.io', 'Paystack'],
+    features: [
+      'API REST com autenticação JWT',
+      'Chat em tempo real com WebSocket',
+      'Gestão de conteúdos educacionais',
+      'Integração com Paystack',
+      'Notificações push',
+      'Acompanhamento de progresso'
+    ],
+    image: '/images/projects/passebem.svg',
+    heroImage: '/images/projects/hero/Cobest.jpg',
   },
   {
     id: 'fams',
@@ -58,6 +128,8 @@ export const projects: Project[] = [
       'Relatórios Excel e PDF',
       'Dashboards analíticos'
     ],
+    image: '/images/projects/fams.svg',
+    heroImage: '/images/projects/hero/fams.svg',
   },
   {
     id: 'juris',
@@ -74,6 +146,8 @@ export const projects: Project[] = [
       'Partilha social',
       'Analytics de uso'
     ],
+    image: '/images/projects/juris.svg',
+    heroImage: '/images/projects/hero/juris.svg',
   },
   {
     id: 'ecoarbeira',
@@ -90,6 +164,8 @@ export const projects: Project[] = [
       'Mapas interativos',
       'Educação ambiental'
     ],
+    image: '/images/projects/ecoarbeira.svg',
+    heroImage: '/images/projects/hero/ecoarbeira.svg',
   },
   {
     id: 'oraculo',
@@ -105,6 +181,8 @@ export const projects: Project[] = [
       'Dashboard administrativo',
       'Gratuito e open-source'
     ],
+    image: '/images/projects/oraculo.svg',
+    heroImage: '/images/projects/hero/oraculo.svg',
   },
   {
     id: 'fonte',
@@ -120,6 +198,7 @@ export const projects: Project[] = [
       'Integração com IA (Ollama)',
       'App auxiliar de gestão'
     ],
+    image: '/images/projects/fonte.svg',
   },
   {
     id: 'salx-pos',
@@ -136,6 +215,7 @@ export const projects: Project[] = [
       'Interface intuitiva',
       'Secure storage'
     ],
+    image: '/images/projects/salx-pos.svg',
   },
   {
     id: 'carrental',
@@ -151,6 +231,7 @@ export const projects: Project[] = [
       'Sistema de reservas',
       'Rastreamento de veículos'
     ],
+    image: '/images/projects/carrental.svg',
   },
   {
     id: 'maranata',
@@ -166,6 +247,7 @@ export const projects: Project[] = [
       'Monetização com Google Ads',
       'Áudio e efeitos sonoros'
     ],
+    image: '/images/projects/maranata.svg',
   },
   {
     id: 'fleets',
@@ -182,6 +264,7 @@ export const projects: Project[] = [
       'Armazenamento AWS S3',
       'Dashboard analítico'
     ],
+    image: '/images/projects/fleets.svg',
   },
   {
     id: 'trip-management',
@@ -197,6 +280,7 @@ export const projects: Project[] = [
       'Relatórios de viagens',
       'API RESTful'
     ],
+    image: '/images/projects/trip-management.svg',
   },
   {
     id: 'kukura',
@@ -212,6 +296,7 @@ export const projects: Project[] = [
       'Multiplataforma'
     ],
     link: 'kukuraapp.empoderandomocambique.org',
+    image: '/images/projects/kukura.svg',
   },
   {
     id: 'consultare',
@@ -226,6 +311,7 @@ export const projects: Project[] = [
       'Interface intuitiva',
       'Feedback em tempo real'
     ],
+    image: '/images/projects/consultare.svg',
   },
   {
     id: 'maticket',
@@ -240,6 +326,7 @@ export const projects: Project[] = [
       'APIs nativas do dispositivo',
       'Sincronização de dados'
     ],
+    image: '/images/projects/maticket.svg',
   },
   {
     id: 'inatro',
@@ -254,6 +341,7 @@ export const projects: Project[] = [
       'Design responsivo',
       'TypeScript type-safe'
     ],
+    image: '/images/projects/inatro.svg',
   },
 ];
 

@@ -3,6 +3,7 @@
 import { Project } from '@/data/projects';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   project: Project;
@@ -13,6 +14,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+      {/* Project Image */}
+      {project.image && (
+        <div className="relative h-48 w-full bg-gradient-to-br from-primary-100 to-primary-200 dark:from-gray-700 dark:to-gray-600">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+      )}
+      
       <div className="p-6">
         {/* Header */}
         <div className="flex items-start justify-between mb-4">

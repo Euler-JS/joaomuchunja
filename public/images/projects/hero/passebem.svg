@@ -1,0 +1,34 @@
+<svg width="1024" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-hero1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0284c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0369a1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="500" fill="url(#grad-hero1)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="924" cy="400" r="60" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="850" cy="80" r="30" fill="rgba(255,255,255,0.12)"/>
+  
+  <!-- Title -->
+  <text x="512" y="220" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">
+    PasseBem
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="512" y="290" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.95)">
+    Plataforma Educacional Completa
+  </text>
+  
+  <!-- Tech Stack -->
+  <g transform="translate(512, 350)" text-anchor="middle">
+    <text font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.8)">
+      Node.js • React Native • Flutter • MongoDB
+    </text>
+  </g>
+</svg>
