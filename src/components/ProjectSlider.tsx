@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Project } from '@/data/projects';
-import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt, FaGithub, FaApple, FaGooglePlay } from 'react-icons/fa';
 
 interface ProjectSliderProps {
   projects: Project[];
@@ -104,16 +104,16 @@ export default function ProjectSlider({ projects }: ProjectSliderProps) {
             </div>
 
             {/* Links */}
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-3">
               {currentProject.link && (
                 <a
-                  href={`https://${currentProject.link}`}
+                  href={currentProject.link.startsWith('http') ? currentProject.link : `https://${currentProject.link}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors"
                 >
                   <FaExternalLinkAlt />
-                  <span>Ver Projeto</span>
+                  <span>Ver Website</span>
                 </a>
               )}
               {currentProject.github && (
@@ -125,6 +125,28 @@ export default function ProjectSlider({ projects }: ProjectSliderProps) {
                 >
                   <FaGithub />
                   <span>GitHub</span>
+                </a>
+              )}
+              {currentProject.appStore && (
+                <a
+                  href={currentProject.appStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-colors"
+                >
+                  <FaApple />
+                  <span>App Store</span>
+                </a>
+              )}
+              {currentProject.playStore && (
+                <a
+                  href={currentProject.playStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-colors"
+                >
+                  <FaGooglePlay />
+                  <span>Play Store</span>
                 </a>
               )}
             </div>

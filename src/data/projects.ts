@@ -5,13 +5,34 @@ export interface Project {
   category: string;
   technologies: string[];
   features: string[];
-  link?: string;
+  link?: string; // Link para web app/site
   github?: string;
+  appStore?: string; // Link da App Store (iOS)
+  playStore?: string; // Link da Play Store (Android)
   image?: string;
   heroImage?: string; // Imagem para slider hero (1024x500)
 }
 
 export const projects: Project[] = [
+   {
+    id: 'maranata',
+    title: 'Maranata Game',
+    description: 'Plataforma educacional completa com API REST, aplicativo móvel e integração de pagamentos. Sistema de chat em tempo real, vídeos educacionais e acompanhamento de progresso do aluno.',
+    category: 'Educação',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'React Native', 'Flutter', 'Socket.io', 'Paystack'],
+    features: [
+      'API REST com autenticação JWT',
+      'Chat em tempo real com WebSocket',
+      'Gestão de conteúdos educacionais',
+      'Integração com Paystack',
+      'Notificações push',
+      'Acompanhamento de progresso'
+    ],
+    image: '/images/projects/hero/Maranata.png',
+    heroImage: '/images/projects/hero/Maranata.png',
+    appStore: 'https://apps.apple.com/mz/app/maranata-game/id6764090942',
+    playStore: 'https://play.google.com/store/apps/details?id=com.maranata.game',
+  },
     {
     id: 'tsevele',
     title: 'Tsevele',
@@ -25,6 +46,8 @@ export const projects: Project[] = [
     ],
     image: '/images/projects/hero/tsevele.jpg',
     heroImage: '/images/projects/hero/tsevele.jpg',
+    playStore: 'https://play.google.com/store/apps/details?id=com.tsevele.app',
+    appStore: 'https://apps.apple.com/app/tsevele/id123456789',
   },
   {
     id: 'cobest-marketplace',
@@ -42,6 +65,7 @@ export const projects: Project[] = [
     ],
     image: '/images/projects/hero/Cobest.jpg',
     heroImage: '/images/projects/hero/Cobest.jpg',
+    playStore: 'https://play.google.com/store/apps/details?id=com.cobest.marketplace',
   },
   {
     id: 'chatmaza',
@@ -59,29 +83,13 @@ export const projects: Project[] = [
     ],
     image: '/images/projects/hero/chatmaza.png',
     heroImage: '/images/projects/hero/chatmaza.png',
-  },
-   {
-    id: 'maranata',
-    title: 'Maranata Game',
-    description: 'Plataforma educacional completa com API REST, aplicativo móvel e integração de pagamentos. Sistema de chat em tempo real, vídeos educacionais e acompanhamento de progresso do aluno.',
-    category: 'Educação',
-    technologies: ['Node.js', 'Express', 'MongoDB', 'React Native', 'Flutter', 'Socket.io', 'Paystack'],
-    features: [
-      'API REST com autenticação JWT',
-      'Chat em tempo real com WebSocket',
-      'Gestão de conteúdos educacionais',
-      'Integração com Paystack',
-      'Notificações push',
-      'Acompanhamento de progresso'
-    ],
-    image: '/images/projects/hero/Maranata.png',
-    heroImage: '/images/projects/hero/Maranata.png',
+    link: 'https://maza.jaaziel.co.mz',
   },
   {
     id: 'shalom-bible',
     title: 'Shalom Bible',
     description: 'O Shalom Bible é o seu assistente bíblico inteligente. Leia a Bíblia completa com acesso ao contexto original em hebraico e grego, e deixe a inteligência artificial tornar cada passagem mais compreensível. Funcionalidades principais: Leitura Completa — Navegue por todos os livros da Bíblia com traduções disponíveis; Contexto Original — Explore o significado histórico e linguístico das palavras em hebraico e grego; Busca por Cenário — Descreva uma situação da sua vida e receba versículos bíblicos relevantes; Gerador de Sermões — Crie sermões completos e fundamentados a partir de qualquer passagem bíblica; Ideal para pastores, líderes, estudantes da Palavra e qualquer pessoa que queira aprofundar a sua fé com mais contexto e clareza. Disponível em Português e Inglês.',
-    category: 'Educação',
+    category: 'Biblia/Religioso',
     technologies: ['Node.js', 'Express', 'MongoDB', 'React Native', 'Flutter', 'Socket.io', 'Paystack'],
     features: [
       'API REST com autenticação JWT',
@@ -93,6 +101,8 @@ export const projects: Project[] = [
     ],
     image: '/images/projects/hero/shalom-bible-grafico-funcionalidade.png',
     heroImage: '/images/projects/hero/shalom-bible-grafico-funcionalidade.png',
+    playStore: 'https://play.google.com/store/apps/details?id=com.shalombible.shalom_bible',
+    appStore: 'https://apps.apple.com/us/app/shalom-bible/id6761934448',
   },
   {
     id: 'passebem',
@@ -110,6 +120,7 @@ export const projects: Project[] = [
     ],
     image: '/images/projects/passebem.svg',
     heroImage: '/images/projects/hero/Cobest.jpg',
+    playStore: 'https://play.google.com/store/apps/details?id=mz.co.passebem2'
   },
   {
     id: 'fams',
@@ -130,6 +141,8 @@ export const projects: Project[] = [
     ],
     image: '/images/projects/fams.svg',
     heroImage: '/images/projects/hero/fams.svg',
+    playStore: 'https://play.google.com/store/apps/details?id=org.equipmoz.fams',
+    link: 'https://fams.co.mz/',
   },
   {
     id: 'juris',
@@ -148,6 +161,7 @@ export const projects: Project[] = [
     ],
     image: '/images/projects/juris.svg',
     heroImage: '/images/projects/hero/juris.svg',
+    playStore: 'https://play.google.com/store/apps/details?id=org.equipmoz.juris'
   },
   {
     id: 'ecoarbeira',
@@ -199,6 +213,7 @@ export const projects: Project[] = [
       'App auxiliar de gestão'
     ],
     image: '/images/projects/fonte.svg',
+    link: 'https://wa.me/258860768186/?text=Ola'
   },
   {
     id: 'salx-pos',
@@ -216,10 +231,11 @@ export const projects: Project[] = [
       'Secure storage'
     ],
     image: '/images/projects/salx-pos.svg',
+    link: 'http://agsog00ks8socwwc4sswwkso.194.163.145.253.sslip.io/dashboard/login'
   },
   {
-    id: 'carrental',
-    title: 'CarRental - Aluguer de Scooters',
+    id: 'eway',
+    title: 'eWay - Aluguer de Scooters',
     description: 'Aplicativo para aluguel de scooters e veículos com integração IoT, geolocalização e scanner de código de barras.',
     category: 'Mobilidade/IoT',
     technologies: ['Ionic', 'Angular 16', 'Capacitor', 'Google Maps', 'IoT'],
@@ -248,6 +264,8 @@ export const projects: Project[] = [
       'Áudio e efeitos sonoros'
     ],
     image: '/images/projects/maranata.svg',
+    playStore: 'https://play.google.com/store/apps/details?id=com.maranata.game',
+    appStore: 'https://apps.apple.com/mz/app/maranata-game/id6764090942',
   },
   {
     id: 'fleets',
@@ -297,6 +315,8 @@ export const projects: Project[] = [
     ],
     link: 'kukuraapp.empoderandomocambique.org',
     image: '/images/projects/kukura.svg',
+    playStore: 'https://play.google.com/store/apps/details?id=org.kukura.equipmoz',
+    appStore: 'https://apps.apple.com/us/app/kukura/id6749900044'
   },
   {
     id: 'consultare',
@@ -312,6 +332,7 @@ export const projects: Project[] = [
       'Feedback em tempo real'
     ],
     image: '/images/projects/consultare.svg',
+    playStore: 'https://play.google.com/store/apps/details?id=org.equipmoz.consultare2'
   },
   {
     id: 'maticket',
@@ -342,6 +363,7 @@ export const projects: Project[] = [
       'TypeScript type-safe'
     ],
     image: '/images/projects/inatro.svg',
+    link: 'https://inatro-sofala.com/?v=1773923934411'
   },
 ];
 

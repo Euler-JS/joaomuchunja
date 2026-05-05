@@ -1,7 +1,7 @@
 'use client';
 
 import { Project } from '@/data/projects';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub, FaApple, FaGooglePlay } from 'react-icons/fa';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -40,16 +40,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
           
           {/* Links */}
-          <div className="flex space-x-2 ml-4">
+          <div className="flex flex-wrap gap-2 ml-4">
             {project.link && (
               <a
-                href={`https://${project.link}`}
+                href={project.link.startsWith('http') ? project.link : `https://${project.link}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
-                aria-label="View project"
+                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+                aria-label="Ver website"
+                title="Ver website"
               >
-                <FaExternalLinkAlt />
+                <FaExternalLinkAlt className="text-lg" />
               </a>
             )}
             {project.github && (
@@ -57,10 +58,35 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
-                aria-label="View on GitHub"
+                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+                aria-label="Ver no GitHub"
+                title="Ver no GitHub"
               >
-                <FaGithub />
+                <FaGithub className="text-lg" />
+              </a>
+            )}
+            {project.appStore && (
+              <a
+                href={project.appStore}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+                aria-label="Baixar na App Store"
+                title="Baixar na App Store"
+              >
+                <FaApple className="text-lg" />
+              </a>
+            )}
+            {project.playStore && (
+              <a
+                href={project.playStore}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+                aria-label="Baixar na Play Store"
+                title="Baixar na Play Store"
+              >
+                <FaGooglePlay className="text-lg" />
               </a>
             )}
           </div>

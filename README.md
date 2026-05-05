@@ -67,6 +67,11 @@ public/images/projects/
 
 Edite os arquivos em `src/data/`:
 - `projects.ts` - Adicione/edite seus projetos
+  - `link` - URL do website/web app
+  - `github` - URL do repositório GitHub
+  - `appStore` - URL da App Store (iOS)
+  - `playStore` - URL da Play Store (Android)
+  - 📖 Veja [docs/LINKS.md](docs/LINKS.md) para guia detalhado
 - `skills.ts` - Atualize suas habilidades
 
 ### Adicionar imagens dos projetos
