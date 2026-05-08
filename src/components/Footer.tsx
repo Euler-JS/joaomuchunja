@@ -42,7 +42,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Conecte-se</h3>
             <div className="flex space-x-4">
               <a
-                href="https://https://github.com/Euler-JS"
+                href="https://github.com/Euler-JS"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-primary-400 transition-colors"

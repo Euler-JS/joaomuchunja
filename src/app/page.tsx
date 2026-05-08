@@ -35,7 +35,7 @@ export default function Home() {
               João Muchunja
             </h1>
             <h2 className="text-2xl md:text-3xl text-primary-600 dark:text-primary-400 mb-8 animate-slide-up">
-              Full Stack Developer
+              Developer
             </h2>
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
               Desenvolvedor apaixonado por criar soluções inovadoras usando Laravel, Node.js, 
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center space-x-6 mt-12">
               <a
-                href="https://https://github.com/Euler-JS"
+                href="https://github.com/Euler-JS"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -377,7 +377,7 @@ export default function Home() {
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">GitHub</p>
                       <a
-                        href="https://https://github.com/Euler-JS"
+                        href="https://github.com/Euler-JS"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"

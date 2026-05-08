@@ -107,5 +107,5 @@ MIT
 ## 👤 Autor
 
 **João Muchunja**
-- GitHub: [@joaomuchunja](https://https://github.com/Euler-JS)
+- GitHub: [@joaomuchunja](https://github.com/Euler-JS)
 - LinkedIn: [joaomuchunja](https://www.linkedin.com/in/jo%C3%A3o-muchunja-99b678116/)
