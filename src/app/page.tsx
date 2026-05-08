@@ -57,7 +57,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center space-x-6 mt-12">
               <a
-                href="https://github.com/joaomuchunja"
+                href="https://https://github.com/Euler-JS"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -65,7 +65,7 @@ export default function Home() {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/joaomuchunja"
+                href="https://www.linkedin.com/in/jo%C3%A3o-muchunja-99b678116/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -73,13 +73,13 @@ export default function Home() {
                 <FaLinkedin />
               </a>
               <a
-                href="mailto:joaomuchunja@example.com"
+                href="mailto:joaoalbertojose96@gmail.com"
                 className="text-3xl text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 <FaEnvelope />
               </a>
               <a
-                href="https://wa.me/258"
+                href="https://wa.me/258846151124"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -337,7 +337,7 @@ export default function Home() {
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">Email</p>
                       <a
-                        href="mailto:joaomuchunja@example.com"
+                        href="mailto:joaoalbertojose96@gmail.com"
                         className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
                       >
                         joaomuchunja@example.com
@@ -349,7 +349,7 @@ export default function Home() {
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">WhatsApp</p>
                       <a
-                        href="https://wa.me/258"
+                        href="https://wa.me/258846151124"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
@@ -363,7 +363,7 @@ export default function Home() {
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">LinkedIn</p>
                       <a
-                        href="https://linkedin.com/in/joaomuchunja"
+                        href="https://www.linkedin.com/in/jo%C3%A3o-muchunja-99b678116/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
@@ -377,12 +377,12 @@ export default function Home() {
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">GitHub</p>
                       <a
-                        href="https://github.com/joaomuchunja"
+                        href="https://https://github.com/Euler-JS"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
                       >
-                        github.com/joaomuchunja
+                        https://github.com/Euler-JS
                       </a>
                     </div>
                   </div>

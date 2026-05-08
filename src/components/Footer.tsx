@@ -42,7 +42,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Conecte-se</h3>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/joaomuchunja"
+                href="https://https://github.com/Euler-JS"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-primary-400 transition-colors"
@@ -51,7 +51,7 @@ export default function Footer() {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/joaomuchunja"
+                href="https://www.linkedin.com/in/jo%C3%A3o-muchunja-99b678116/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-primary-400 transition-colors"
@@ -60,14 +60,14 @@ export default function Footer() {
                 <FaLinkedin />
               </a>
               <a
-                href="mailto:joaomuchunja@example.com"
+                href="mailto:joaoalbertojose96@gmail.com"
                 className="text-2xl hover:text-primary-400 transition-colors"
                 aria-label="Email"
               >
                 <FaEnvelope />
               </a>
               <a
-                href="https://wa.me/258"
+                href="https://wa.me/258846151124"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-primary-400 transition-colors"
